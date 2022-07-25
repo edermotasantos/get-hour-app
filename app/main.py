@@ -15,4 +15,4 @@ def get_hour():
     url = 'http://worldtimeapi.org/api/timezone/' + timezone
     result = requests.get(url)
     hour = result.json()['datetime'][11:19]
-    return {'hour': hour}
+    return hour
